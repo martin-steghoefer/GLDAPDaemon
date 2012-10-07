@@ -31,7 +31,7 @@
         <dependency>
             <groupId>com.github.dcarter.gdata-java-client</groupId>
             <artifactId>gdata-contacts-3.0</artifactId>
-            <version>1.41.1-SNAPSHOT</version>
+            <version>1.47.1</version>
         </dependency>
         <dependency>
             <groupId>commons-lang</groupId>
@@ -87,6 +87,19 @@
             <id>sonatype-nexus-snapshots</id>
             <name>Sonatype Nexus Snapshots</name>
             <url>http://oss.sonatype.org/content/repositories/snapshots</url>
+        </repository>
+        <repository>
+            <releases>
+                <enabled>true</enabled>
+                <checksumPolicy>fail</checksumPolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <checksumPolicy>fail</checksumPolicy>
+            </snapshots>
+            <id>dcarter</id>
+            <name>dcarter</name>
+            <url>http://dev.page5of4.com/nexus/content/repositories/releases</url>
         </repository>
     </repositories>
 </project>
